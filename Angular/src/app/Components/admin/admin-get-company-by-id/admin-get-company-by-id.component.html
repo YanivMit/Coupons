@@ -1,0 +1,10 @@
+<h1>Find company by ID</h1>
+<form>
+<label>Enter company's ID: </label><input name="myCompanyID" type="number" [(ngModel)]="myCompanyID"/> <button (click)="onClick()">Search</button>
+</form>
+<div *ngIf="company">
+  <p>Company ID       : {{company.companyId}}</p>
+  <p>Company name     : {{company.name}}</p>
+  <p>Company email    : {{company.email}}</p>
+  <p>Company password : {{company.password}}</p>
+</div>

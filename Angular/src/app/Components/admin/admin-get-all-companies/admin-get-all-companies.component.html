@@ -1,0 +1,20 @@
+<h1>Get all companies</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>E-mail</th>
+    <th>Password</th>
+    <th>Delete</th>
+    <th>Update</th>
+  </tr>
+  <tr *ngFor="let c of company">
+    <td>{{c.companyId}}</td>
+    <td>{{c.name}}</td>
+    <td>{{c.email}}</td>
+    <td>{{c.password}}</td>
+    <td><button>delete</button></td>
+    <td><button>Update</button></td>
+  </tr>
+</table>

@@ -1,0 +1,22 @@
+<h1>Get all customers</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Delete</th>
+    <th>Update</th>
+  </tr>
+  <tr *ngFor="let c of customers">
+    <td>{{c.id}}</td>
+    <td>{{c.first_name}}</td>
+    <td>{{c.last_name}}</td>
+    <td>{{c.email}}</td>
+    <td>{{c.password}}</td>
+    <td><button>delete</button></td>
+    <td><button>Update</button></td>
+  </tr>
+</table>

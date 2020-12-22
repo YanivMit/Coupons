@@ -1,0 +1,29 @@
+<h1>Get all coupons</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Begins</th>
+    <th>Ends</th>
+    <th>Available</th>
+    <th>Price</th>
+    <th>Company</th>
+    <th>Delete</th>
+    <th>Update</th>
+  </tr>
+  <tr *ngFor="let c of coupons">
+    <td>{{c.id}}</td>
+    <td>{{c.title}}</td>
+    <td>{{c.description}}</td>
+    <td>{{c.startDate}}</td>
+    <td>{{c.endDate}}</td>
+    <td>{{c.amount}}</td>
+    <td>{{c.price}}</td>
+    <td>{{c.company.name}}</td>
+    <td><button>delete</button></td>
+    <td><button>Update</button></td>
+  </tr>
+</table>
+
