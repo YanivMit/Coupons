@@ -1,0 +1,12 @@
+<div>
+    <header>
+        <img src="assets/CouponProject.jpg" alt="Site logo" width="85%">
+    </header>
+    <label>
+        <a routerLink="login">Login</a> / <a routerLink="signup">Sign up</a>
+    </label>
+
+</div>
+<p *ngIf="condition=='admin'"><app-admin></app-admin></p>
+<p *ngIf="condition=='company'"><app-company></app-company></p>
+<p *ngIf="condition=='customer'"><app-customer></app-customer></p>

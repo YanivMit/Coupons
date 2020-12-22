@@ -1,0 +1,8 @@
+div {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+label {
+    text-align: right;
+}
